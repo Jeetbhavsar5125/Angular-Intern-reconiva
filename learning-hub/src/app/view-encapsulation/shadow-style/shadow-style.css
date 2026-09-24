@@ -1,0 +1,17 @@
+.box {
+  border: 3px solid blue;
+  padding: 16px;
+  margin: 12px;
+  border-radius: 8px;
+  background-color: #f0f4ff;
+}
+
+h2 {
+  color: blue;
+  font-family: sans-serif;
+}
+
+.label {
+  font-weight: bold;
+  color: darkblue;
+}
