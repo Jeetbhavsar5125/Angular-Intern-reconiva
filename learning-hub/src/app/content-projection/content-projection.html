@@ -1,0 +1,19 @@
+<section>
+  <h2>Content Projection</h2>
+
+  <app-single-slot>
+    <p>This paragraph is projected into the single slot!</p>
+  </app-single-slot>
+
+  <app-multi-slot>
+    <p question>Is content projection cool? (this goes into the question slot)</p>
+    <p default>This goes into the default slot.</p>
+  </app-multi-slot>
+
+  <app-conditional>
+    <ng-template appConditionalContent>
+      <p>This content only renders when you click Show!</p>
+    </ng-template>
+  </app-conditional>
+
+</section>

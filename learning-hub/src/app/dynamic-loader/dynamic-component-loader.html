@@ -1,0 +1,13 @@
+<div class="ad-banner">
+  <h2>Ad Banner</h2>
+  <p class="counter">Ad {{ currentIndex + 1 }} of {{ totalAds }}</p>
+
+  <div class="ad-slot">
+    <ng-container
+      [ngComponentOutlet]="currentAd.component"
+      [ngComponentOutletInputs]="currentAd.inputs"
+    />
+  </div>
+
+  <button (click)="displayNextAd()">Next Ad →</button>
+</div>

@@ -1,0 +1,9 @@
+<div class="card">
+  <h3>Conditional Content Projection</h3>
+  <button (click)="toggle()">{{ expanded ? 'Hide' : 'Show' }} Content</button>
+  @if (expanded) {
+    <div class="content-box">
+      <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+    </div>
+  }
+</div>
