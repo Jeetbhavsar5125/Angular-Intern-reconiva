@@ -1,0 +1,13 @@
+<h2>Mission Control</h2>
+<button (click)="announce()">Announce Mission</button>
+
+@for (astronaut of astronauts; track astronaut) {
+  <app-astronaut [astronaut]="astronaut" />
+}
+
+<h3>History</h3>
+<ul>
+  @for (event of history; track $index) {
+    <li>{{ event }}</li>
+  }
+</ul>

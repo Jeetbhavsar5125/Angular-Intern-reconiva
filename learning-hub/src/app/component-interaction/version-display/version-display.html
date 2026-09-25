@@ -1,0 +1,8 @@
+<h4>Version {{ major }}.{{ minor }}</h4>
+<strong>Change Log:</strong>
+<ul>
+    @for (log of changeLog; track $index) {
+    <li>{{ log }}</li>
+    }
+</ul>
+    

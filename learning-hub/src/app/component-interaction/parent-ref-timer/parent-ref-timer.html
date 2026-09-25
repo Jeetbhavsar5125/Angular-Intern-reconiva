@@ -1,0 +1,5 @@
+<h2>Template Reference Variable Demo</h2>
+<button (click)="timer.start()">Start</button>
+<button (click)="timer.stop()">Stop</button>
+<p>Seconds left: {{ timer.seconds() }}</p>
+<app-countdown-timer #timer />

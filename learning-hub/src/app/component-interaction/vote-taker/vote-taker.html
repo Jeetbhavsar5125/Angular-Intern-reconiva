@@ -1,0 +1,5 @@
+<h1>Vote: Is current goverment good ?</h1>
+<h2>Agree:{{agree}} | Disagree: {{disagree}}</h2>
+@for (voter of voters;track voter){
+    <app-voter [voterName]="voter" (voted)="onVoted($event)"/>
+}
