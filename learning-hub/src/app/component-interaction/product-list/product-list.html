@@ -1,0 +1,7 @@
+<h2>Product List</h2>
+@for(product of ProductList;track product.name){
+    <app-product-card
+        [productName]="product.name"
+        [cost]="product.price"
+    />
+}
