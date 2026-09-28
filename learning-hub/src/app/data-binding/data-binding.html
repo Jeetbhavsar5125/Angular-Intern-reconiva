@@ -2,4 +2,33 @@
 <p>Example: {{name}}</p>
 <h3>Property Binding Example</h3>
 <button [disabled]="isDisabled()" (click)="isdisable_func()" >Click Me</button>
+<img [src]="image" alt="Image" width="200" height="200">
+<div class="input-demo-card" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+  <h3>Real-time Input Reader using the template variable</h3>
+  <label for="customer-input">Type something:
+    <input id="customer-input" #customerInput (input)="0" placeholder="Start typing...">
+  </label>
+  <p>You are typing: <strong>{{ customerInput.value }}</strong></p>
+</div>
+<!-- Event Binding Example -->
+<!-- Bind button disabled state to `isUnchanged` property -->
+<button type="button" (click)="onButtonClick()" [disabled]="isUnchanged()">Disabled Button</button>
+<button type="button" [attr.aria-label]="actionName" (click)="toggleAction()">
+  {{ actionName }} with Aria
+</button>
+<!-- Adds .special when isSpecial is true; adds .error-box when hasError is true -->
+<div [ngClass]="{ 'special': isSpecial, 'error-box': hasError }">
+  Dynamic styled message box
+</div>
+<p [ngStyle]="{
+  'color': textColor,
+  'font-size.px': fontSize,
+  'font-weight': isSpecial ? 'bold' : 'normal'
+}">
+  This text changes color and size dynamically.
+</p>
+<input type="text" [(ngModel)]="twoway" placeholder="Enter your name" >
+<h3>Two-way Data Binding Example : {{twoway}}</h3>
 
+<!-- usage of $event in event binding  -->
+ <button (click)="handleClick($event)">Click Me</button>
