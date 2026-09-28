@@ -8,9 +8,13 @@ import {  DynamicComponentLoader} from './dynamic-loader/dynamic-component'
 import { AngularElementsDemoComponent } from './angular-elements/popup/angular-elements';
 import { PipeUnderstanding } from './pipe-understanding/pipe-understanding';
 import { DirectiveCompostiton } from './directive-compostiton/directive-compostiton';
+import { DependencyInjectionDemoComponent } from './dependency-injection/dependency-injection';
+import { HierarchicalDiDemoComponent } from './hierarchical-di/hierarchical-di';
 @Component({
   selector: 'app-root',
-  imports: [Header, DataBinding, ViewEncapsulationDemoComponent, ComponentInteraction, ContentProjection,DynamicComponentLoader,AngularElementsDemoComponent, PipeUnderstanding,DirectiveCompostiton],
+  imports: [Header, DataBinding, ViewEncapsulationDemoComponent, ComponentInteraction, ContentProjection,DynamicComponentLoader,AngularElementsDemoComponent, PipeUnderstanding,DirectiveCompostiton,DependencyInjectionDemoComponent
+,HierarchicalDiDemoComponent
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, Input, Output } from '@angular/core';
+import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/core';
 
 @Directive({
   standalone: true
@@ -7,7 +7,9 @@ export class BadgeDirective {
   @Input() badgeText = 'DEFAULT BADGE';
   @Output() badgeClick = new EventEmitter<string>();
 
-  onBadgeClicked() {
+
+  @HostListener('click')
+  onClick() {
     this.badgeClick.emit(`Badge "${this.badgeText}" clicked!`);
   }
 }
