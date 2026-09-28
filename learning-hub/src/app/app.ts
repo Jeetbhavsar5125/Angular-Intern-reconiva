@@ -5,11 +5,12 @@ import { ViewEncapsulationDemoComponent } from './view-encapsulation/view-encaps
 import { ComponentInteraction } from './component-interaction/component-interaction';
 import { ContentProjection } from './content-projection/content-projection';
 import {  DynamicComponentLoader} from './dynamic-loader/dynamic-component'
-  import { AngularElementsDemoComponent } from './angular-elements/popup/angular-elements';
+import { AngularElementsDemoComponent } from './angular-elements/popup/angular-elements';
 import { PipeUnderstanding } from './pipe-understanding/pipe-understanding';
+import { DirectiveCompostiton } from './directive-compostiton/directive-compostiton';
 @Component({
   selector: 'app-root',
-  imports: [Header, DataBinding, ViewEncapsulationDemoComponent, ComponentInteraction, ContentProjection,DynamicComponentLoader,AngularElementsDemoComponent, PipeUnderstanding],
+  imports: [Header, DataBinding, ViewEncapsulationDemoComponent, ComponentInteraction, ContentProjection,DynamicComponentLoader,AngularElementsDemoComponent, PipeUnderstanding,DirectiveCompostiton],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

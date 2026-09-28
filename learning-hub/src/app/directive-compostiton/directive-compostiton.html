@@ -1,0 +1,9 @@
+<div style="padding: 20px;">
+      <h2>Directive Composition API Demo</h2>
+      <app-custom-card
+        color="#fff9c4"
+        badge="VIP Card"
+        (clicked)="onCardBadgeClick($event)">
+      </app-custom-card>
+      <p><strong>Log:</strong> {{ message }}</p>
+</div>
