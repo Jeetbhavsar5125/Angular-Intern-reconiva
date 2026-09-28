@@ -6,9 +6,10 @@ import { ComponentInteraction } from './component-interaction/component-interact
 import { ContentProjection } from './content-projection/content-projection';
 import {  DynamicComponentLoader} from './dynamic-loader/dynamic-component'
   import { AngularElementsDemoComponent } from './angular-elements/popup/angular-elements';
+import { PipeUnderstanding } from './pipe-understanding/pipe-understanding';
 @Component({
   selector: 'app-root',
-  imports: [Header, DataBinding, ViewEncapsulationDemoComponent, ComponentInteraction, ContentProjection,DynamicComponentLoader,AngularElementsDemoComponent],
+  imports: [Header, DataBinding, ViewEncapsulationDemoComponent, ComponentInteraction, ContentProjection,DynamicComponentLoader,AngularElementsDemoComponent, PipeUnderstanding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,17 @@
+<h1>pipe-understanding</h1>
+<h4>Date pipe-understanding {{ dateValue | date }}</h4>
+<h4>Upper case pipe-understanding {{ name | uppercase }}</h4>
+<p>The hero's birthday is {{ birthday | date:format }} in "{{format}}" format.
+  Click the toggle button to change formats.</p>
+
+<button type="button" (click)="toggleFormat()">Toggle Format</button>
+<p>Chained Pipe example</p>
+<p>
+  The chained hero's uppercase birthday is
+  {{ birthday | date | uppercase}}
+</p>
+
+<p>
+  The chained hero's uppercase birthday in "fullDate" format is
+  {{ birthday | date:'fullDate' | uppercase}}
+</p>
